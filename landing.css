@@ -1,0 +1,137 @@
+@import url(normalize.css);
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+*{
+    font-family: Staatliches;
+    box-sizing: border-box;
+}
+.generalDiv{
+    margin: 12px;
+    border-radius: 25px;
+    background: #333;
+    padding: 24px;
+    height: fit-content;
+}
+.topButton{
+    flex-wrap: wrap;
+    display: flex;
+}
+.topButton h1{
+    font-size: 32px;
+    color: #FFF;
+    flex-basis: 85%;
+    cursor: pointer;
+}
+.topButton .fa-arrow-circle-left{
+    font-size: 32px;
+    color: #FFF;
+    flex-basis: 15%;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.bankInfo{
+    text-align: center;
+}
+.bankInfo .fas{
+    font-size: 64px;
+    color: #FFF;
+}
+.bankInfo p{
+    font-size: 32px;
+    color: #FFF;
+}
+.bankSubInfo{
+    background-color: rgba(2, 2, 2, 0.1);
+    border-radius: 15px;
+    padding: 8px;
+    margin: 8px;
+}
+
+
+
+.navFath{
+    display: flex;
+    justify-content: center;
+}
+.navFath #nav{
+    height: fit-content;
+    width: calc(100vw - 48px);
+    background-color: rgba(2, 2, 2, 0.5);
+    border-radius: 25px;
+    position: absolute;
+    color: #FFF;
+    padding: 24px;
+    top: 100px;
+    z-index: 100;
+}
+.navFath #nav a{
+    color: #FFF;
+    font-size: 18px;
+    padding: 14px;
+    display: block;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    margin-top: 4px;
+}
+.navFath #nav a:hover{
+    background: rgba(2, 2, 2, 0.2);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden{
+    transform: translateY(-150%);
+    transition: linear .5s;
+}
+.shown{
+    transform: translateY(0%);
+    transition: linear .5s;
+}
+.blurred{
+    filter: blur(5px);
+    transition: linear .5s;
+}
