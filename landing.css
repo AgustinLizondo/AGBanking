@@ -1,5 +1,7 @@
 @import url(normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url(transfer.css);
+
 *{
     font-family: Staatliches;
     box-sizing: border-box;
@@ -133,5 +135,9 @@
 }
 .blurred{
     filter: blur(5px);
+    transition: linear .5s;
+}
+.notBlurred{
+    filter: blur(0px);
     transition: linear .5s;
 }

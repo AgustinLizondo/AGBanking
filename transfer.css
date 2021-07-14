@@ -1,0 +1,25 @@
+.transferBlock{
+    color: #FFF;
+    font-size: 24px;
+}
+.inputButton{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 14px;
+}
+.inputButton input{
+    outline: none;
+    flex-grow: 2;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #222;
+    color: #FFF;
+}
+.inputButton button{
+    flex-grow: 1;
+    border: 2px solid #000;
+    border-radius: 5px;
+    outline: none;
+    background: #222;
+    color: #FFF;
+}
