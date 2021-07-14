@@ -8,6 +8,4 @@ button.addEventListener("click", ()=>{
     nav.classList.toggle("shown");
     bankInfo.classList.toggle("notBlurred");
     bankInfo.classList.toggle("blurred");
-    transferBlock.classList.toggle("notBlurred");
-    transferBlock.classList.toggle("blurred");
 })
