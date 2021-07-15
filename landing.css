@@ -1,6 +1,7 @@
 @import url(normalize.css);
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url(transfer.css);
+@import url(deposit.css);
 
 *{
     font-family: Staatliches;
@@ -23,7 +24,7 @@
     flex-basis: 85%;
     cursor: pointer;
 }
-.topButton .fa-arrow-circle-left{
+.topButton .fa-align-justify{
     font-size: 32px;
     color: #FFF;
     flex-basis: 15%;
@@ -85,7 +86,12 @@
     cursor: pointer;
 }
 
-
+#actualBalance{
+    background: #222;
+    border: 1px solid #FFF;
+    border-radius: 15px;
+    padding-left: 18px;
+}
 
 
 
