@@ -26,12 +26,16 @@ var updateBalance = ()=>{
 }
 var transfer = ()=>{
     transferAmount = parseInt(transferInput.value);
-    if (moneyVar.saldoActual >= transferAmount){
+    if (moneyVar.saldoActual >= transferAmount && accountInput.value.length == 22){
         moneyVar.saldoActual -= transferAmount;
         alert("Your transfer was sent successfully");
         updateBalance();
     }else{
-        alert("Your balance is not enough");
+        if (accountInput.value.length < 22){
+            alert("You need to write a 22 numbers CBU")
+        }else{
+            alert("Your balance is not enough");
+        }
     }
 }
 
