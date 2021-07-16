@@ -31,7 +31,7 @@ var transfer = ()=>{
         alert("Your transfer was sent successfully");
         updateBalance();
     }else{
-        if (accountInput.value.length < 22){
+        if (accountInput.value.length != 22){
             alert("You need to write a 22 numbers CBU")
         }else{
             alert("Your balance is not enough");
