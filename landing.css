@@ -24,6 +24,10 @@
     flex-basis: 85%;
     cursor: pointer;
 }
+.topButton h1 a{
+    text-decoration: none;
+    color: #FFF;
+}
 .topButton .fa-align-justify{
     font-size: 32px;
     color: #FFF;
