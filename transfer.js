@@ -1,5 +1,5 @@
-var actualBalance = document.getElementById("actualBalance");
-var saldoActual = 0;
+import { moneyVar } from "/consts.js";
+
 var buttonTransfer = document.getElementById("buttonTransfer");
 var transferInput = document.getElementById("transferInput");
 var accountInput = document.getElementById("accountInput")
@@ -20,14 +20,14 @@ button.addEventListener("click", ()=>{
 //Transfer
 
 var updateBalance = ()=>{
-    actualBalance.innerHTML = `<p> Actual Balance: $${saldoActual} </p>`
+    moneyVar.actualBalance.innerHTML = `<p> Actual Balance: $${moneyVar.saldoActual} </p>`
     transferInput.value = null;
     accountInput.value = null;
 }
 var transfer = ()=>{
     transferAmount = parseInt(transferInput.value);
-    if (saldoActual >= transferAmount){
-        saldoActual -= transferAmount;
+    if (moneyVar.saldoActual >= transferAmount){
+        moneyVar.saldoActual -= transferAmount;
         alert("Your transfer was sent successfully");
         updateBalance();
     }else{
@@ -35,7 +35,7 @@ var transfer = ()=>{
     }
 }
 
-actualBalance.innerHTML = `<p> Actual Balance: $${saldoActual} </p>`;
+moneyVar.actualBalance.innerHTML = `<p> Actual Balance: $${moneyVar.saldoActual} </p>`;
 
 
 if (transferInput.value != null){
